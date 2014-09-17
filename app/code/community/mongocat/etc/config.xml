@@ -1,0 +1,38 @@
+<config>
+    <modules>
+        <_MongoCatalog>
+            <version>0.0.1</version>
+        </_MongoCatalog>
+    </modules>
+    <global>
+        <models>
+            <mongocatalog>
+                <class>_MongoCatalog_Model</class>
+                <resourceModel>mongocatalog_resource</resourceModel>
+            </mongocatalog>
+            <mongocatalog_resource>
+                <class>_MongoCatalog_Model_Resource</class>
+            </mongocatalog_resource>
+            <catalog>
+                <rewrite>
+                    <product_attribute_backend_media>_MongoCatalog_Model_Override_Catalog_Product_Attribute_Backend_Media</product_attribute_backend_media>
+                </rewrite>
+            </catalog>
+            <catalog_resource>
+                <rewrite>
+                    <product>_MongoCatalog_Model_Resource_Override_Catalog_Product</product>
+                    <product_action>_MongoCatalog_Model_Resource_Override_Catalog_Product_Action</product_action>
+                    <product_collection>_MongoCatalog_Model_Resource_Override_Catalog_Product_Collection</product_collection>
+                    <url>_MongoCatalog_Model_Resource_Override_Catalog_Url</url>
+                </rewrite>
+            </catalog_resource>
+        </models>
+        <importexport module="importexport">
+            <import_entities>
+                <catalog_product translate="label">
+                    <model_token>mongocatalog/import_entity_product</model_token>
+                </catalog_product>
+            </import_entities>
+        </importexport>
+    </global>
+</config>
