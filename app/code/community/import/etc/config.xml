@@ -1,0 +1,8 @@
+
+<config>
+    <modules>
+        <_MongoCatalogImport>
+            <version>0.0.1</version>
+        </_MongoCatalogImport>
+    </modules>
+</config>
