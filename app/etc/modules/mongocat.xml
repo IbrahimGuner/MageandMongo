@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Smile_MongoCore>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Core/>
+            </depends>
+        </Smile_MongoCore>
+    </modules>
+</config>
